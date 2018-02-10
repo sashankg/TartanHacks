@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  height: 100%;
+}
+
+.stories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 64px;
+    padding-top: 0px;
+}
+
+.storyItem {
+    margin: 32px;
+    width: 256px;
+    min-width: 256px;
+    height: 256px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.storyItemTitle {
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+}
+
+#searchInput {
+    font-family: 'Lora', serif;
+    height: 64px;
+    border-width: 0px;
+    font-size: 32px;
+    padding: 0px;
+    flex-grow: 2;
+    flex-basis: 1px;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+#searchIcon {
+    margin: 16px;
+    height: 32px;
+    flex-basis: 32px;
+    flex-shrink: 0;
+}
+
+.currentStory {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storyParts {
+    display: flex;
+    flex-direction: row;
+    margin: 16px;
+}
+
+.storyPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    margin: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 64px;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+#closeIcon {
+    width: 32px;
+    margin: 16px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.heading {
+}
+
+.headline {
+    color: white;
+    background-color: black;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0px;
+    padding: 8px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.content {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.author {
+    text-align: right;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.image {
+    width: 256px;
+    float: right;
+}
+
+p {
+    text-indent: 2.0em;
+}
+
+.space {
+    flex: 1;
+    min-height: 16px;
+}
+
+.sentiment {
+    height: 4px;
+    justify-self: flex-end;
+}
